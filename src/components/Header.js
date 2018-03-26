@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, NavLink } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 import logo from '../static/img/logo.jpg';
 import '../static/css/style.css';
@@ -35,20 +35,20 @@ class Header extends Component {
                 <div className="container collapse navbar-collapse" id="navbarResponsive">
                   <ul className="navbar-nav ml-auto">
                     <li className="nav-item active">
-                      <NavLink className="nav-link" to="#/">
-                        <span className="glyphicon glyphicon-dashboard text-white"> Dashboard</span>
-                      </NavLink>
+                      <a className="nav-link" href="/dashboard">
+                        <span className="glyphicon glyphicon-dashboard text-white" /> Dashboard
+                      </a>
                     </li>
                     <li className="nav-item">
                       <a
                         className="nav-link dropdown-toggle text-white"
-                        id="profile"
+                        id="category"
                         data-toggle="dropdown"
                         href="#/"
                       >
-                        <span className="glyphicon glyphicon-list-alt text-white"> Category</span>
+                        <span className="glyphicon glyphicon-list-alt text-white" /> Category
                       </a>
-                      <ul className="dropdown-menu" role="menu" aria-labelledby="profile">
+                      <ul className="dropdown-menu" role="menu" aria-labelledby="category">
                         <li className="nav-item">
                           <a
                             className="nav-link text-info"
@@ -72,13 +72,13 @@ class Header extends Component {
                     <li className="nav-item">
                       <a
                         className="nav-link dropdown-toggle text-white"
-                        id="profile"
+                        id="recipes"
                         data-toggle="dropdown"
                         href="#/"
                       >
-                        <span className="glyphicon glyphicon-list-alt text-white"> Recipes</span>
+                        <span className="glyphicon glyphicon-list-alt text-white" />  Recipes
                       </a>
-                      <ul className="dropdown-menu" role="menu" aria-labelledby="profile">
+                      <ul className="dropdown-menu" role="menu" aria-labelledby="recipes">
                         <li className="nav-item">
                           <a
                             className="nav-link text-info"
@@ -108,12 +108,12 @@ class Header extends Component {
                         data-toggle="dropdown"
                         href="#/"
                       >
-                        <span className="glyphicon glyphicon-user text-white"> User</span>
+                        <span className="glyphicon glyphicon-user text-white" /> User
                       </a>
                       <ul className="dropdown-menu" role="menu" aria-labelledby="profile">
                         <li className="nav-item">
                           <a
-                            className="nav-link text-info"
+                            className="nav-link text-info mr-2"
                             // onClick={User.logoutUser.bind(this)}
                             href="#/"
                           >

@@ -1,5 +1,5 @@
     body {
-        background-color: darkgrey;
+        background-color: rgb(229, 226, 226);
     }
     .carousel-inner img {
     max-width: 1900;
@@ -213,4 +213,18 @@
     .lmargin {
         margin-top: 60px;
         margin-bottom: 150px;
+    }
+    .div-align{
+        margin: auto;
+        width: 80%;
+        height: 480px;
+        vertical-align: middle;
+        background-color: white;
+    }
+    .div-align center {
+        margin: 0;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
